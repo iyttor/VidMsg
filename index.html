@@ -1,1 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta name="description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
+  <meta name="keywords" content="video retrieval, MLLM embeddings, video-text retrieval, multimodal, VidVec, zero-shot, machine learning, computer vision">
+  <meta name="author" content="Issar Tzachor, Dvir Samuel, Rami Ben-Ari">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VidVec Project">
+  <meta property="og:title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta property="og:description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
+  <meta property="og:url" content="https://iyttor.github.io/VidVec/">
+  <meta property="og:image" content="https://iyttor.github.io/VidVec/static/images/main-figure.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Issar Tzachor">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="video retrieval">
+  <meta property="article:tag" content="MLLM embeddings">
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta name="twitter:description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
+  <meta name="twitter:image" content="https://iyttor.github.io/VidVec/static/images/main-figure.png">
+  <meta name="twitter:image:alt" content="VidVec Overview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta name="citation_author" content="Tzachor, Issar">
+  <meta name="citation_author" content="Samuel, Dvir">
+  <meta name="citation_author" content="Ben-Ari, Rami">
+  <meta name="citation_publication_date" content="2025">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="apple-touch-icon" href="static/images/favicon.svg">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Match Nerfies style -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval",
+    "description": "VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Issar Tzachor"
+      },
+      {
+        "@type": "Person",
+        "name": "Dvir Samuel"
+      },
+      {
+        "@type": "Person",
+        "name": "Rami Ben-Ari"
+      }
+    ],
+    "datePublished": "2025",
+    "url": "https://iyttor.github.io/VidVec/",
+    "image": "https://iyttor.github.io/VidVec/static/images/main-figure.png",
+    "keywords": ["video retrieval", "MLLM embeddings", "video-text retrieval", "multimodal", "zero-shot"],
+    "abstract": "Recent studies have adapted generative Multimodal Large Language Models (MLLMs) into embedding extractors for vision tasks, typically through fine-tuning to produce universal representations. However, their performance on video remains inferior to Video Foundation Models (VFMs). In this paper, we focus on leveraging MLLMs for video-text embedding and retrieval. We first conduct a systematic layer-wise analysis, showing that intermediate (pre-trained) MLLM layers already encode substantial task-relevant information. Leveraging this insight, we demonstrate that combining intermediate-layer embeddings with a calibrated MLLM head yields strong zero-shot retrieval performance without any training. Building on these findings, we introduce a lightweight text-based alignment strategy which maps dense video captions to short summaries and enables task-related video-text embedding learning without visual supervision. Remarkably, without any fine-tuning beyond text, our method outperforms current methods, often by a substantial margin, achieving state-of-the-art results across common video retrieval benchmarks.",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=E2q-TI8AAAAJ&hl=en" target="_blank">Issar Tzachor</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=_CWxQ1gAAAAJ&hl=en" target="_blank">Dvir Samuel</a>,</span>
+              <span class="author-block">
+                <a href="https://www.benarirami.com/" target="_blank">Rami Ben-Ari</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">OriginAI</span>
+            </div>
+
+            <div class="has-text-centered" style="margin-top: 0.5rem;">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://www.arxiv.org/abs/2602.08099" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://www.arxiv.org/pdf/2602.08099.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block" style="text-align: center;">
+                  <a href="https://github.com/iyttor/VidVec" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.6;">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                  <span style="display: block; font-size: 0.7em; color: #888; margin-top: 0.2em;">Coming Soon</span>
+                </span>
+
+                <span class="link-block" style="text-align: center;">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.6;">
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" style="height: 1.2em; vertical-align: middle;">
+                  </span>
+                  <span>Model</span>
+                  </a>
+                  <span style="display: block; font-size: 0.7em; color: #888; margin-top: 0.2em;">Coming Soon</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+
+  <!-- Teaser / Main Figure -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <figure class="image">
+              <img src="static/images/main-figure.png" alt="VidVec overview: (a) zero-shot retrieval from intermediate MLLM layers, (b) reranking via calibrated MLLM head, (c) in-context text-only optimization" class="overview-figure">
+            </figure>
+            <h2 class="has-text-justified" style="margin-top: 1rem;">
+              An overview of VidVec:<br>(a) <strong>Zero-shot retrieval:</strong> extract video and text embeddings from an intermediate MLLM layer for initial ranking.<br>(b) <strong>Zero-shot reranking:</strong> leverage the calibrated MLLM head for pairwise scoring to rerank top-<em>K</em> candidates.<br>(c) <strong>In-context optimization:</strong> <em>lightweight</em> model alignment using only ~60K text-only pairs for embedding extraction via a text-to-text mapping from dense video captions to short summaries, designed to mirror the video&ndash;text inference setup.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Teaser -->
+
+
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Recent studies have adapted generative Multimodal Large Language Models (MLLMs) into embedding extractors for vision tasks, typically through fine-tuning to produce universal representations.
+              However, their performance on video remains inferior to Video Foundation Models (VFMs). In this paper, we focus on leveraging MLLMs for video&ndash;text embedding and retrieval.
+              We first conduct a systematic layer-wise analysis, showing that intermediate (pre-trained) MLLM layers already encode substantial task-relevant information. Leveraging this insight, we demonstrate that combining intermediate-layer embeddings with a calibrated MLLM head yields <strong>strong zero-shot retrieval performance without any training</strong>.
+              Building on these findings, we introduce a lightweight text-based alignment strategy which maps dense video captions to short summaries and enables task-related video&ndash;text embedding learning <strong>without visual supervision</strong>.
+              Remarkably, without any fine-tuning beyond text, our method outperforms current methods, often by a substantial margin, achieving <strong>state-of-the-art results</strong> across common video retrieval benchmarks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Abstract -->
+
+
+  <!-- Zero-Shot Retrieval Section -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Zero-Shot Retrieval</h2>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          A key insight of VidVec is that off-the-shelf MLLMs already encode substantial retrieval-relevant information in their hidden representations.
+          We conduct a systematic <strong>layer-wise analysis</strong> across multiple MLLM backbones, revealing that selecting appropriate intermediate layers yields strong zero-shot retrieval performance &mdash; even without any alignment or retrieval-specific fine-tuning.
+        </p>
+      </div>
+
+      <!-- Layer-wise analysis figure -->
+      <div class="columns is-centered" style="margin-bottom: 2rem;">
+        <div class="column is-8">
+          <figure class="image">
+            <img src="static/images/all_models_layerwise_retrieval_msrvtt.png" alt="Layer-wise Recall@1 on MSR-VTT for zero-shot video embedding extraction across multiple MLLM backbones" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              Layer-wise Recall@1 on MSR-VTT for zero-shot video embedding extraction across multiple MLLM backbones. VideoLLaMA3-7B achieves the best overall performance.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          While early layers contain little retrieval-relevant signal, several mid- to late-stage intermediate layers achieve markedly stronger performance. Among all evaluated models, <strong>VideoLLaMA3-7B</strong> attains the best overall zero-shot performance from its intermediate layers.
+        </p>
+        <p>
+          Further gains are obtained by <strong>reranking</strong> with a calibrated MLLM head: each query&ndash;candidate pair is evaluated with a binary relevance question, and the likelihood of the affirmative token is used as the reranking score. This two-stage approach requires no training whatsoever.
+        </p>
+      </div>
+
+      <!-- Cropped top portion of main figure -->
+      <div class="columns is-centered" style="margin-bottom: 2rem;">
+        <div class="column is-10">
+          <figure class="image">
+            <div class="main-figure-crop main-figure-crop-top">
+              <img src="static/images/main-figure.png" alt="VidVec zero-shot retrieval: intermediate layer embeddings and calibrated MLLM head reranking">
+            </div>
+            <figcaption class="has-text-centered figure-caption">
+              <strong>(a)</strong> Zero-shot retrieval from intermediate MLLM layer &nbsp;&nbsp; <strong>(b)</strong> Reranking via calibrated MLLM head
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          Despite conducting <strong>no training</strong>, VidVec-ZS outperforms all prior MLLM embedders &mdash; which are <em>trained</em> to produce vision&ndash;language embeddings &mdash; on all three benchmarks, achieving notable gains in Recall@1 of <strong>+3.1%</strong>, <strong>+7.7%</strong>, and <strong>+9.4%</strong> on MSR-VTT, VATEX, and DiDeMo, respectively.
+        </p>
+      </div>
+
+      <!-- Zero-shot table -->
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <figure class="image">
+            <img src="static/images/tab-ZS.png" alt="Zero-shot VidVec-ZS vs trained MLLM embedders: Text-to-Video retrieval results" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              Zero-shot VidVec-ZS (no training) outperforms all trained MLLM embedders on Text-to-Video retrieval.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Zero-Shot Retrieval Section -->
+
+
+  <!-- In-Context Optimization Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">In-Context Optimization</h2>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          Beyond zero-shot, VidVec introduces a lightweight <strong>in-context optimization</strong> strategy that achieves further gains using only <strong>~60K text-only pairs</strong> and no visual data.
+          Instead of conventional NLI-style text pairs, we map <em>dense video captions</em> to <em>short summaries</em>, creating a text-to-text training signal that implicitly captures visual content and temporal dynamics.
+        </p>
+      </div>
+
+      <!-- Cropped bottom portion of main figure -->
+      <div class="columns is-centered" style="margin-bottom: 2rem;">
+        <div class="column is-10">
+          <figure class="image">
+            <div class="main-figure-crop main-figure-crop-bottom">
+              <img src="static/images/main-figure.png" alt="VidVec in-context optimization: text-to-text mapping from dense video captions to short summaries">
+            </div>
+            <figcaption class="has-text-centered figure-caption">
+              <strong>(c)</strong> In-context optimization: lightweight text-only alignment using dense caption &rarr; short summary mapping.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          The detailed descriptions are aligned with the full video content, while the short summaries act as compact textual anchors aligned with the query text. This formulation encourages the model to learn a visually grounded "summarization" process that effectively mirrors video encoding &mdash; <strong>without ever seeing a video during training</strong>.
+        </p>
+        <p>
+          Our in-context approach not only leverages video-related textual pairs, but also uses detailed video captions aligned with video content at inference time, together with short summaries that relate directly to the input text.
+        </p>
+      </div>
+
+      <!-- In-context ablation -->
+      <div class="columns is-centered" style="margin-bottom: 2rem;">
+        <div class="column is-6">
+          <figure class="image">
+            <img src="static/images/in-context-ablation.png" alt="Comparison of different optimization strategies: NLI vs Video Captions vs In-Context" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              Comparison of optimization approaches. Our in-context optimization outperforms both prior NLI-based approach and straightforward video-caption–based strategies.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End In-Context Optimization Section -->
+
+
+  <!-- Main Results Section -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Results</h2>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          We evaluate VidVec against state-of-the-art MLLM embedders and Video Foundation Models (VFMs) on four common video&ndash;text retrieval benchmarks: MSR-VTT, MSVD, VATEX, and DiDeMo. Without any fine-tuning beyond text, <strong>VidVec achieves state-of-the-art results, outperforming methods trained on orders of magnitude more video&ndash;text data</strong>.
+        </p>
+      </div>
+
+      <!-- T2V Results Table -->
+      <div class="columns is-centered" style="margin-bottom: 2.5rem;">
+        <div class="column is-11">
+          <figure class="image">
+            <img src="static/images/tab-T2V.png" alt="Text-to-Video retrieval results on MSR-VTT, MSVD, VATEX, and DiDeMo" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              <strong>Text-to-Video retrieval.</strong> VidVec-O (optimized) outperforms MLLM-based embedders across all benchmarks by large margins.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- V2T Results Table -->
+      <div class="columns is-centered" style="margin-bottom: 2.5rem;">
+        <div class="column is-11">
+          <figure class="image">
+            <img src="static/images/tab-V2T.png" alt="Video-to-Text retrieval results on MSR-VTT, MSVD, VATEX, and DiDeMo" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              <strong>Video-to-Text retrieval.</strong> VidVec-O (optimized) consistently achieves the best results across benchmarks.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- SOTA Comparison Table -->
+      <div class="columns is-centered">
+        <div class="column is-11">
+          <figure class="image">
+            <img src="static/images/tab-SOTA.png" alt="State-of-the-art comparison on video-text retrieval benchmarks" class="result-figure">
+            <figcaption class="has-text-centered figure-caption">
+              <strong>State-of-the-art comparison.</strong> VidVec end-to-end sets new state-of-the-art results on multiple benchmarks, surpassing Video Foundation Models (VFMs) contrastively trained on enormous number of video&ndash;text pairs.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Main Results Section -->
+
+
+  <!-- Key Contributions Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Key Contributions</h2>
+          <div class="content has-text-justified">
+            <ul class="contributions-list">
+              <li><strong>Layer-wise analysis:</strong> A systematic study revealing that intermediate MLLM layers already encode substantial video&ndash;text alignment information suitable for retrieval.</li>
+              <li><strong>Zero-shot two-stage retrieval:</strong> Combining intermediate-layer embeddings with a calibrated MLLM head for pairwise reranking yields strong retrieval performance without any training.</li>
+              <li><strong>In-context text-only optimization:</strong> A lightweight alignment strategy using only ~60K text-only pairs (dense caption &rarr; short summary), enabling video&ndash;text embedding learning without visual supervision.</li>
+              <li><strong>State-of-the-art results:</strong> Without any fine-tuning beyond text, VidVec outperforms current MLLM embedders and Video Foundation Models across common video retrieval benchmarks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Key Contributions Section -->
+
+
+  <!-- BibTeX citation -->
+  <section class="section hero is-light" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{tzachor2026vidvec,
+      title={VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval}, 
+      author={Issar Tzachor, Dvir Samuel, Rami Ben-Ari},
+      year={2026},
+}</code></pre>
+    </div>
+  </section>
+  <!-- End BibTeX citation -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content justify-content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
