@@ -5,42 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <meta name="title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
-  <meta name="description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
-  <meta name="keywords" content="video retrieval, MLLM embeddings, video-text retrieval, multimodal, VidVec, zero-shot, machine learning, computer vision">
-  <meta name="author" content="Issar Tzachor, Dvir Samuel, Rami Ben-Ari">
+  <meta name="title" content="VidMsg: A Benchmark for Implicit Message Inference in Short Videos">
+  <meta name="description" content="VidMsg is a benchmark for evaluating implicit message understanding in short, internet-native video clips. It contains 400 YouTube-derived clips across 9 topic areas and 52 fine-grained target messages.">
+  <meta name="keywords" content="VidMsg, video benchmark, implicit message, video understanding, message retrieval, video-text retrieval, multimodal">
+  <meta name="author" content="Issar Tzachor, Michael Green, Rami Ben-Ari">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="VidVec Project">
-  <meta property="og:title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
-  <meta property="og:description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
-  <meta property="og:url" content="https://iyttor.github.io/VidVec/">
-  <meta property="og:image" content="https://iyttor.github.io/VidVec/static/images/main-figure.png">
+  <meta property="og:site_name" content="VidMsg Project">
+  <meta property="og:title" content="VidMsg: A Benchmark for Implicit Message Inference in Short Videos">
+  <meta property="og:description" content="VidMsg is a benchmark for evaluating implicit message understanding in short, internet-native video clips. 400 clips, 9 topics, 52 messages.">
+  <meta property="og:url" content="https://iyttor.github.io/VidMsg/">
+  <meta property="og:image" content="https://iyttor.github.io/VidMsg/static/images/data-collection-pipeline.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
-  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
+  <meta property="og:image:alt" content="VidMsg: A Benchmark for Implicit Message Inference in Short Videos">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
   <meta property="article:author" content="Issar Tzachor">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="video retrieval">
-  <meta property="article:tag" content="MLLM embeddings">
+  <meta property="article:tag" content="video benchmark">
+  <meta property="article:tag" content="implicit message inference">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
-  <meta name="twitter:description" content="VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.">
-  <meta name="twitter:image" content="https://iyttor.github.io/VidVec/static/images/main-figure.png">
-  <meta name="twitter:image:alt" content="VidVec Overview">
+  <meta name="twitter:title" content="VidMsg: A Benchmark for Implicit Message Inference in Short Videos">
+  <meta name="twitter:description" content="VidMsg: 400 YouTube clips, 9 topics, 52 messages — a benchmark for evaluating implicit message understanding in short videos.">
+  <meta name="twitter:image" content="https://iyttor.github.io/VidMsg/static/images/data-collection-pipeline.png">
+  <meta name="twitter:image:alt" content="VidMsg data collection pipeline">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval">
+  <meta name="citation_title" content="VidMsg: A Benchmark for Implicit Message Inference in Short Videos">
   <meta name="citation_author" content="Tzachor, Issar">
-  <meta name="citation_author" content="Samuel, Dvir">
+  <meta name="citation_author" content="Green, Michael">
   <meta name="citation_author" content="Ben-Ari, Rami">
-  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_publication_date" content="2026">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -54,7 +54,7 @@
   <link rel="preconnect" href="https://ajax.googleapis.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval</title>
+  <title>VidMsg: A Benchmark for Implicit Message Inference in Short Videos</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
-  <!-- Fonts - Match Nerfies style -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&display=swap" rel="stylesheet">
   
   <!-- Defer non-critical JavaScript -->
@@ -87,8 +87,8 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval",
-    "description": "VidVec leverages MLLMs for video-text retrieval via layer-wise analysis, calibrated reranking, and lightweight text-only alignment, achieving state-of-the-art results.",
+    "headline": "VidMsg: A Benchmark for Implicit Message Inference in Short Videos",
+    "description": "VidMsg is a benchmark for evaluating implicit message understanding in short, internet-native video clips. It contains 400 YouTube-derived clips across 9 topic areas and 52 fine-grained target messages.",
     "author": [
       {
         "@type": "Person",
@@ -96,22 +96,126 @@
       },
       {
         "@type": "Person",
-        "name": "Dvir Samuel"
+        "name": "Michael Green"
       },
       {
         "@type": "Person",
         "name": "Rami Ben-Ari"
       }
     ],
-    "datePublished": "2025",
-    "url": "https://iyttor.github.io/VidVec/",
-    "image": "https://iyttor.github.io/VidVec/static/images/main-figure.png",
-    "keywords": ["video retrieval", "MLLM embeddings", "video-text retrieval", "multimodal", "zero-shot"],
-    "abstract": "Recent studies have adapted generative Multimodal Large Language Models (MLLMs) into embedding extractors for vision tasks, typically through fine-tuning to produce universal representations. However, their performance on video remains inferior to Video Foundation Models (VFMs). In this paper, we focus on leveraging MLLMs for video-text embedding and retrieval. We first conduct a systematic layer-wise analysis, showing that intermediate (pre-trained) MLLM layers already encode substantial task-relevant information. Leveraging this insight, we demonstrate that combining intermediate-layer embeddings with a calibrated MLLM head yields strong zero-shot retrieval performance without any training. Building on these findings, we introduce a lightweight text-based alignment strategy which maps dense video captions to short summaries and enables task-related video-text embedding learning without visual supervision. Remarkably, without any fine-tuning beyond text, our method outperforms current methods, often by a substantial margin, achieving state-of-the-art results across common video retrieval benchmarks.",
+    "datePublished": "2026",
+    "url": "https://iyttor.github.io/VidMsg/",
+    "keywords": ["video benchmark", "implicit message inference", "video retrieval", "multimodal"],
+    "abstract": "Understanding short online videos involves more than identifying visible objects and actions; video makers often include an underlying message or purpose in the clip. We introduce VidMsg, a benchmark for evaluating implicit message understanding in short, internet-native video clips.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
   </script>
+
+  <style>
+    /* Inline table styles for results */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .results-table th,
+    .results-table td {
+      padding: 0.5rem 0.6rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .results-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+    }
+    .results-table td:first-child,
+    .results-table th:first-child {
+      text-align: left;
+    }
+    .results-table tr.section-header td {
+      background: #ececec;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center;
+    }
+    .results-table tr.ours td {
+      font-weight: 700;
+    }
+    .results-table .best {
+      font-weight: 700;
+    }
+    .results-table tr:last-child td {
+      border-bottom: 2px solid #333;
+    }
+    .table-caption {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    /* Teaser stats responsive */
+    .teaser-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .teaser-stat {
+      text-align: center;
+      min-width: 100px;
+    }
+    .teaser-stat-number {
+      color: #5BC9C5;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .teaser-stat-label {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+    .teaser-tagline {
+      font-size: 1rem;
+      color: #444;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    @media (max-width: 480px) {
+      .teaser-stat-number { font-size: 1.8rem; }
+      .teaser-stat-label  { font-size: 0.8rem; }
+      .teaser-tagline     { font-size: 0.9rem; }
+    }
+    /* Teal accent overrides */
+    .title.is-3::after {
+      background: linear-gradient(135deg, #5BC9C5 0%, #3ab5b0 100%);
+    }
+    .box {
+      border-left: 4px solid #5BC9C5;
+    }
+    .contributions-list li::before {
+      background: linear-gradient(135deg, #5BC9C5 0%, #3ab5b0 100%);
+    }
+    /* Button hover overrides */
+    .button.is-dark:hover {
+      background-color: #5BC9C5 !important;
+      box-shadow: 0 4px 12px rgba(91, 201, 197, 0.4) !important;
+    }
+    .copy-bibtex-btn:hover {
+      background-color: #5BC9C5 !important;
+      box-shadow: 0 4px 12px rgba(91, 201, 197, 0.4);
+    }
+    .scroll-to-top {
+      background: #5BC9C5 !important;
+    }
+    .scroll-to-top:hover {
+      background: #3ab5b0 !important;
+    }
+  </style>
 </head>
 <body>
 
@@ -128,45 +232,45 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval</h1>
+            <h1 class="title is-1 publication-title">VidMsg: A Benchmark for Implicit Message Inference in Short Videos</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=E2q-TI8AAAAJ&hl=en" target="_blank">Issar Tzachor</a>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=_CWxQ1gAAAAJ&hl=en" target="_blank">Dvir Samuel</a>,</span>
+                <a href="https://scholar.google.com/citations?user=WMVqWRoAAAAJ" target="_blank">Michael Green</a>,</span>
               <span class="author-block">
                 <a href="https://www.benarirami.com/" target="_blank">Rami Ben-Ari</a>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">OriginAI</span>
+              <span class="author-block">OriginAI, Israel</span>
             </div>
 
             <div class="has-text-centered" style="margin-top: 0.5rem;">
               <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://www.arxiv.org/abs/2602.08099" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block" style="text-align: center;">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.6;">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                   </a>
+                  <span style="display: block; font-size: 0.7em; color: #888; margin-top: 0.2em;">Coming Soon</span>
                 </span>
 
-                <span class="link-block">
-                  <a href="https://www.arxiv.org/pdf/2602.08099.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block" style="text-align: center;">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.6;">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                   </a>
+                  <span style="display: block; font-size: 0.7em; color: #888; margin-top: 0.2em;">Coming Soon</span>
                 </span>
 
                 <span class="link-block" style="text-align: center;">
-                  <a href="https://github.com/iyttor/VidVec" target="_blank"
+                  <a href="https://github.com/iyttor/VidMsg" target="_blank"
                   class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.6;">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -181,7 +285,7 @@
                   <span class="icon">
                     <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" style="height: 1.2em; vertical-align: middle;">
                   </span>
-                  <span>Model</span>
+                  <span>Dataset</span>
                   </a>
                   <span style="display: block; font-size: 0.7em; color: #888; margin-top: 0.2em;">Coming Soon</span>
                 </span>
@@ -195,18 +299,49 @@
   <!-- End Hero Section -->
 
 
-  <!-- Teaser / Main Figure -->
+  <!-- Teaser / Stats Banner -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <div class="columns is-centered">
-          <div class="column is-8">
+        <div class="teaser-stats">
+          <div class="teaser-stat">
+            <p class="teaser-stat-number">400</p>
+            <p class="teaser-stat-label">clips</p>
+          </div>
+          <div class="teaser-stat">
+            <p class="teaser-stat-number">9</p>
+            <p class="teaser-stat-label">topic areas</p>
+          </div>
+          <div class="teaser-stat">
+            <p class="teaser-stat-number">52</p>
+            <p class="teaser-stat-label">target messages</p>
+          </div>
+          <div class="teaser-stat">
+            <p class="teaser-stat-number">2</p>
+            <p class="teaser-stat-label">evaluation protocols</p>
+          </div>
+        </div>
+        <p class="has-text-centered">
+          VidMsg evaluates whether models can identify and retrieve videos by <strong>what they communicate</strong>.
+        </p>
+
+        <!-- Teaser figures: examples + sunburst -->
+        <div class="columns is-centered" style="margin-top: 2rem;">
+          <div class="column is-5">
             <figure class="image">
-              <img src="static/images/main-figure.png" alt="VidVec overview: (a) zero-shot retrieval from intermediate MLLM layers, (b) reranking via calibrated MLLM head, (c) in-context text-only optimization" class="overview-figure">
+              <img src="static/images/fig_retrieval_setting_boxes.png" alt="VidMsg retrieval setting: example clips and their target messages" class="overview-figure">
+              <figcaption class="has-text-centered figure-caption" style="margin-top: 0.5rem;">Example clips with their associated target messages.</figcaption>
             </figure>
-            <h2 class="has-text-justified" style="margin-top: 1rem;">
-              An overview of VidVec:<br>(a) <strong>Zero-shot retrieval:</strong> extract video and text embeddings from an intermediate MLLM layer for initial ranking.<br>(b) <strong>Zero-shot reranking:</strong> leverage the calibrated MLLM head for pairwise scoring to rerank top-<em>K</em> candidates.<br>(c) <strong>In-context optimization:</strong> <em>lightweight</em> model alignment using only ~60K text-only pairs for embedding extraction via a text-to-text mapping from dense video captions to short summaries, designed to mirror the video&ndash;text inference setup.
-            </h2>
+            <figure class="image" style="margin-top: 1.5rem;">
+              <img src="static/images/fig_b_duration.png" alt="Clip duration distribution" class="result-figure">
+              <figcaption class="has-text-centered figure-caption" style="margin-top: 0.5rem;">Clip duration distribution.</figcaption>
+            </figure>
+          </div>
+          <div class="column is-5">
+            <figure class="image">
+              <img src="static/images/fig_c2_topic_message_sunburst.png" alt="VidMsg: topic and message distribution" class="overview-figure">
+              <figcaption class="has-text-centered figure-caption" style="margin-top: 1.7rem;">Topic and message distribution. Each ring level shows topics (inner) and their individual messages (outer).</figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -223,11 +358,18 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Recent studies have adapted generative Multimodal Large Language Models (MLLMs) into embedding extractors for vision tasks, typically through fine-tuning to produce universal representations.
-              However, their performance on video remains inferior to Video Foundation Models (VFMs). In this paper, we focus on leveraging MLLMs for video&ndash;text embedding and retrieval.
-              We first conduct a systematic layer-wise analysis, showing that intermediate (pre-trained) MLLM layers already encode substantial task-relevant information. Leveraging this insight, we demonstrate that combining intermediate-layer embeddings with a calibrated MLLM head yields <strong>strong zero-shot retrieval performance without any training</strong>.
-              Building on these findings, we introduce a lightweight text-based alignment strategy which maps dense video captions to short summaries and enables task-related video&ndash;text embedding learning <strong>without visual supervision</strong>.
-              Remarkably, without any fine-tuning beyond text, our method outperforms current methods, often by a substantial margin, achieving <strong>state-of-the-art results</strong> across common video retrieval benchmarks.
+              Understanding short online videos involves more than identifying visible objects and actions;
+              video makers often include an underlying message or purpose in the clip. We introduce <strong>VidMsg</strong>, a benchmark for evaluating implicit message understanding in short, internet-native video clips.
+              VidMsg contains <strong>400 YouTube-derived clips</strong> across <strong>9 practical topic areas</strong> and <strong>52 fine-grained target messages</strong>, covering domains such as career and finance, education, health and well-being, culture, safety, sustainability, and lifestyle.
+            </p>
+            <p>
+              VidMsg is constructed through a <strong>message-first pipeline</strong>: an LLM first translates target messages into indirect search scenarios, which are used to retrieve candidate clips. Human annotators then retain clips that convey the intended message without being overly explicit.
+              VidMsg is designed primarily for <strong>bidirectional message&ndash;clip retrieval</strong> for scalable applications such as video search and recommendation, where systems must capture holistic video understanding.
+              In addition to retrieval, VidMsg includes a <strong>diagnostic multiple-choice QA benchmark</strong>, where models select the intended message of a clip from semantically related alternatives.
+            </p>
+            <p>
+              Experiments with contemporary video-language and retrieval models show that <strong>strong models often fail on VidMsg</strong>, because the task requires pragmatic inference, integration of contextual cues, and discrimination among semantically close messages.
+              We also introduce <strong>VidVec-Msg</strong>, a baseline method that improves message-oriented retrieval while leaving substantial headroom for future work.
             </p>
           </div>
         </div>
@@ -237,104 +379,70 @@
   <!-- End Abstract -->
 
 
-  <!-- Zero-Shot Retrieval Section -->
+  <!-- Dataset Statistics Section -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <h2 class="title is-3">Zero-Shot Retrieval</h2>
+          <h2 class="title is-3">Dataset Overview</h2>
         </div>
       </div>
 
       <div class="content has-text-justified">
         <p>
-          A key insight of VidVec is that off-the-shelf MLLMs already encode substantial retrieval-relevant information in their hidden representations.
-          We conduct a systematic <strong>layer-wise analysis</strong> across multiple MLLM backbones, revealing that selecting appropriate intermediate layers yields strong zero-shot retrieval performance &mdash; even without any alignment or retrieval-specific fine-tuning.
-        </p>
-      </div>
-
-      <!-- Layer-wise analysis figure -->
-      <div class="columns is-centered" style="margin-bottom: 2rem;">
-        <div class="column is-8">
-          <figure class="image">
-            <img src="static/images/all_models_layerwise_retrieval_msrvtt.png" alt="Layer-wise Recall@1 on MSR-VTT for zero-shot video embedding extraction across multiple MLLM backbones" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              Layer-wise Recall@1 on MSR-VTT for zero-shot video embedding extraction across multiple MLLM backbones. VideoLLaMA3-7B achieves the best overall performance.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="content has-text-justified">
-        <p>
-          While early layers contain little retrieval-relevant signal, several mid- to late-stage intermediate layers achieve markedly stronger performance. Among all evaluated models, <strong>VideoLLaMA3-7B</strong> attains the best overall zero-shot performance from its intermediate layers.
+          VidMsg covers <strong>nine recurring communicative domains</strong>:
+          career &amp; finance, community &amp; culture, cultural trends, education, health &amp; well-being, lifestyle &amp; creativity, mobility &amp; work, safety &amp; empowerment, and sustainability.
+          These topics were selected because clips in such domains often convey abstract advice, values, emotions, social meanings, or implicit viewpoints rather than merely documenting visible events.
         </p>
         <p>
-          Further gains are obtained by <strong>reranking</strong> with a calibrated MLLM head: each query&ndash;candidate pair is evaluated with a binary relevance question, and the likelihood of the affirmative token is used as the reranking score. This two-stage approach requires no training whatsoever.
+          The dataset is <strong>relatively balanced across topics</strong>: the number of clips per topic ranges from 35 to 49. Across 52 target messages, each message is represented by 5 to 9 clips, with most messages having 8 or 9 clips. This structure supports both broad topic coverage and fine-grained message-level evaluation.
         </p>
-      </div>
-
-      <!-- Cropped top portion of main figure -->
-      <div class="columns is-centered" style="margin-bottom: 2rem;">
-        <div class="column is-10">
-          <figure class="image">
-            <div class="main-figure-crop main-figure-crop-top">
-              <img src="static/images/main-figure.png" alt="VidVec zero-shot retrieval: intermediate layer embeddings and calibrated MLLM head reranking">
-            </div>
-            <figcaption class="has-text-centered figure-caption">
-              <strong>(a)</strong> Zero-shot retrieval from intermediate MLLM layer &nbsp;&nbsp; <strong>(b)</strong> Reranking via calibrated MLLM head
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="content has-text-justified">
         <p>
-          Despite conducting <strong>no training</strong>, VidVec-ZS outperforms all prior MLLM embedders &mdash; which are <em>trained</em> to produce vision&ndash;language embeddings &mdash; on all three benchmarks, achieving notable gains in Recall@1 of <strong>+3.1%</strong>, <strong>+7.7%</strong>, and <strong>+9.4%</strong> on MSR-VTT, VATEX, and DiDeMo, respectively.
+          Importantly, within each topic the benchmark includes semantically related but distinct messages&mdash;such as &ldquo;food as self-care&rdquo; versus &ldquo;lifestyle medicine beyond symptom relief,&rdquo; or &ldquo;work-life integration&rdquo; versus &ldquo;performance over work hours.&rdquo;
+          Models must therefore distinguish fine-grained communicative meanings rather than simply identify the general domain.
         </p>
-      </div>
 
-      <!-- Zero-shot table -->
-      <div class="columns is-centered">
-        <div class="column is-10">
-          <figure class="image">
-            <img src="static/images/tab-ZS.png" alt="Zero-shot VidVec-ZS vs trained MLLM embedders: Text-to-Video retrieval results" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              Zero-shot VidVec-ZS (no training) outperforms all trained MLLM embedders on Text-to-Video retrieval.
-            </figcaption>
-          </figure>
+        <!-- Distribution figures -->
+        <div class="columns is-centered" style="margin-bottom: 1.5rem;">
+          <div class="column is-6">
+            <figure class="image">
+              <img src="static/images/fig_e_vids_per_topic.png" alt="Total number of clips per topic" class="result-figure">
+              <figcaption class="has-text-centered figure-caption" style="margin-top: 0.5rem;">Total number of clips per topic.</figcaption>
+            </figure>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
-  <!-- End Zero-Shot Retrieval Section -->
+  <!-- End Dataset Statistics Section -->
 
 
-  <!-- In-Context Optimization Section -->
+  <!-- Data Collection Section -->
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <h2 class="title is-3">In-Context Optimization</h2>
+          <h2 class="title is-3">Message-First Data Collection</h2>
         </div>
       </div>
 
       <div class="content has-text-justified">
         <p>
-          Beyond zero-shot, VidVec introduces a lightweight <strong>in-context optimization</strong> strategy that achieves further gains using only <strong>~60K text-only pairs</strong> and no visual data.
-          Instead of conventional NLI-style text pairs, we map <em>dense video captions</em> to <em>short summaries</em>, creating a text-to-text training signal that implicitly captures visual content and temporal dynamics.
+          Constructing a benchmark for implicit message understanding is challenging because standard web search is optimized for explicit objects, events, and keywords.
+          Directly searching for a target message often retrieves clips where the message is stated verbatim in the title, speech, or text overlay.
+          To address this, we adopt a <strong>message-first collection pipeline</strong>.
         </p>
       </div>
 
-      <!-- Cropped bottom portion of main figure -->
       <div class="columns is-centered" style="margin-bottom: 2rem;">
-        <div class="column is-10">
+        <div class="column is-11">
           <figure class="image">
-            <div class="main-figure-crop main-figure-crop-bottom">
-              <img src="static/images/main-figure.png" alt="VidVec in-context optimization: text-to-text mapping from dense video captions to short summaries">
-            </div>
-            <figcaption class="has-text-centered figure-caption">
-              <strong>(c)</strong> In-context optimization: lightweight text-only alignment using dense caption &rarr; short summary mapping.
+            <img src="static/images/data-collection-pipeline.png" alt="Overview of the message-first video dataset construction pipeline" class="overview-figure">
+            <figcaption class="has-text-centered figure-caption" style="margin-top: 0.75rem;">
+              Overview of the message-first video dataset construction pipeline.
+              (1) Starting with a target message, (2) an LLM generates a visual storyline in which the message is embedded implicitly, (3) an LLM generates indirect search keywords, (4) verified by an LLM judge, (5) used to retrieve candidate videos; (6) after duration filtering, (7) a second LLM judge removes unrelated clips.
+              Clips are then annotated by three AMT workers and conservatively filtered, yielding <strong>400 clips from 520 candidates (77% retention)</strong>.
             </figcaption>
           </figure>
         </div>
@@ -342,30 +450,76 @@
 
       <div class="content has-text-justified">
         <p>
-          The detailed descriptions are aligned with the full video content, while the short summaries act as compact textual anchors aligned with the query text. This formulation encourages the model to learn a visually grounded "summarization" process that effectively mirrors video encoding &mdash; <strong>without ever seeing a video during training</strong>.
+          The process starts with a target message. An LLM is prompted to generate short, story-like scenarios that naturally incorporate the target message into the narrative <em>without stating it directly</em>.
+          A second LLM generates indirect search keywords from these stories, and a separate LLM judge verifies that the keywords remain related to the original message without direct lexical disclosure.
+          The resulting keywords are used to retrieve candidate public clips, which are filtered to three minutes or less.
         </p>
         <p>
-          Our in-context approach not only leverages video-related textual pairs, but also uses detailed video captions aligned with video content at inference time, together with short summaries that relate directly to the input text.
+          Candidate clips are validated through <strong>human annotation on Amazon Mechanical Turk</strong>. Each clip is assigned to three independent annotators, who rate on a five-point scale how strongly it conveys the target message, and flag clips where the message is too explicit. A clip is retained only if a majority of annotators assign a high score (4 or 5), no annotator assigns a score of 1, and no annotator marks the clip as &ldquo;too obvious.&rdquo;
+        </p>
+
+        <h3 class="title is-5" style="margin-top: 1.5rem;">Annotation Agreement</h3>
+        <p>
+          We evaluate inter-rater reliability using average pairwise linear-weighted &kappa; among the three annotators assigned to each clip.
+          Agreement is <strong>substantial across all annotated clips (&kappa;&nbsp;=&nbsp;0.681)</strong>, and higher among the 400 retained clips (&kappa;&nbsp;=&nbsp;0.795), as expected given the conservative filtering.
+          These results indicate that annotators generally agree on whether a clip conveys the target message, while some variation reflects the inherent nuance of implicit message understanding.
         </p>
       </div>
 
-      <!-- In-context ablation -->
-      <div class="columns is-centered" style="margin-bottom: 2rem;">
-        <div class="column is-6">
+    </div>
+  </section>
+  <!-- End Data Collection Section -->
+
+
+  <!-- Evaluation Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Evaluation Protocols</h2>
+        </div>
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <div class="box" style="height: 100%;">
+            <h3 class="title is-5"><i class="fas fa-search" style="color:#5BC9C5; font-size:1.1em;"></i> Bidirectional Retrieval</h3>
+            <p class="has-text-justified">
+              The primary evaluation protocol. In <strong>text-to-video</strong> retrieval, each of the 52 target messages is used as a query against all 400 clips.
+              In <strong>video-to-text</strong> retrieval, each clip is used to retrieve the corresponding target message from the 52 candidates.
+              This setting reflects scalable applications such as search, recommendation, and content analysis.
+              We report Recall@10 and mAP for text-to-video, and Recall@1 and mAP for video-to-text.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box" style="height: 100%;">
+            <h3 class="title is-5"><span style="color:#5BC9C5; font-size:1.4em;">&#9745;</span> Multiple-Choice QA</h3>
+            <p class="has-text-justified">
+              A diagnostic analysis protocol. For each clip, the model selects the main message from <strong>5 candidate messages sampled from the same topic</strong>.
+              The same-topic design makes the task more challenging than coarse topic classification, since distractors are semantically related to the correct message.
+              This setting evaluates MLLMs in their native instruction-following mode, exposing gaps in direct message reasoning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered" style="margin-top: 2rem;">
+        <div class="column is-11">
           <figure class="image">
-            <img src="static/images/in-context-ablation.png" alt="Comparison of different optimization strategies: NLI vs Video Captions vs In-Context" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              Comparison of optimization approaches. Our in-context optimization outperforms both prior NLI-based approach and straightforward video-caption–based strategies.
+            <img src="static/images/mcq_middle_row.png" alt="MCQ example questions from Mobility & Work, Lifestyle & Creativity, and Career topics" class="result-figure">
+            <figcaption class="has-text-centered figure-caption" style="margin-top: 0.5rem;">
+              Example multiple-choice questions from three topic areas. Each clip is paired with 5 same-topic candidate messages.
             </figcaption>
           </figure>
         </div>
       </div>
     </div>
   </section>
-  <!-- End In-Context Optimization Section -->
+  <!-- End Evaluation Section -->
 
 
-  <!-- Main Results Section -->
+  <!-- Results Section -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -374,50 +528,116 @@
         </div>
       </div>
 
-      <div class="content has-text-justified">
+      <!-- Retrieval Results -->
+      <h3 class="title is-4" style="margin-bottom: 0.5rem;">Retrieval Results</h3>
+      <div class="content has-text-justified" style="margin-bottom: 1rem;">
         <p>
-          We evaluate VidVec against state-of-the-art MLLM embedders and Video Foundation Models (VFMs) on four common video&ndash;text retrieval benchmarks: MSR-VTT, MSVD, VATEX, and DiDeMo. Without any fine-tuning beyond text, <strong>VidVec achieves state-of-the-art results, outperforming methods trained on orders of magnitude more video&ndash;text data</strong>.
+          VidMsg is challenging for standard retrieval models, especially those trained for caption-like video&ndash;text alignment.
+          Among off-the-shelf baselines, <strong>Qwen3-VL-Emb</strong> performs best, reaching 39.7 R@10 and 36.1 mAP (T2V) without transcripts.
+          Our baseline, <strong>VidVec-Msg</strong>, outperforms all baselines, achieving <strong>47.5 R@10 and 45.6 mAP</strong> (T2V) and <strong>48.9 R@1 and 63.2 mAP</strong> (V2T) without transcripts, with further gains when transcripts are provided.
         </p>
       </div>
 
-      <!-- T2V Results Table -->
-      <div class="columns is-centered" style="margin-bottom: 2.5rem;">
-        <div class="column is-11">
-          <figure class="image">
-            <img src="static/images/tab-T2V.png" alt="Text-to-Video retrieval results on MSR-VTT, MSVD, VATEX, and DiDeMo" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              <strong>Text-to-Video retrieval.</strong> VidVec-O (optimized) outperforms MLLM-based embedders across all benchmarks by large margins.
-            </figcaption>
-          </figure>
-        </div>
+      <div style="overflow-x: auto; margin-bottom: 2rem;">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th rowspan="3">Method</th>
+              <th colspan="4">Text-to-Video</th>
+              <th colspan="4">Video-to-Text</th>
+            </tr>
+            <tr>
+              <th colspan="2">w/o transcripts</th>
+              <th colspan="2">w/ transcripts</th>
+              <th colspan="2">w/o transcripts</th>
+              <th colspan="2">w/ transcripts</th>
+            </tr>
+            <tr>
+              <th>R@10</th><th>mAP</th>
+              <th>R@10</th><th>mAP</th>
+              <th>R@1</th><th>mAP</th>
+              <th>R@1</th><th>mAP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Clip4Clip</td><td>21.8</td><td>19.3</td><td>—</td><td>—</td><td>24.1</td><td>37.3</td><td>—</td><td>—</td></tr>
+            <tr><td>ImageBind</td><td>24.6</td><td>23.6</td><td>—</td><td>—</td><td>20.0</td><td>34.8</td><td>—</td><td>—</td></tr>
+            <tr><td>PE-Core</td><td>10.3</td><td>10.0</td><td>—</td><td>—</td><td>8.1</td><td>16.8</td><td>—</td><td>—</td></tr>
+            <tr><td>InternVideo2-1B</td><td>19.5</td><td>17.4</td><td>—</td><td>—</td><td>17.7</td><td>29.4</td><td>—</td><td>—</td></tr>
+            <tr><td>InternVideo2-6B</td><td>25.5</td><td>22.6</td><td>—</td><td>—</td><td>23.0</td><td>36.1</td><td>—</td><td>—</td></tr>
+            <tr><td>VideoPrism</td><td>28.4</td><td>24.8</td><td>—</td><td>—</td><td>29.9</td><td>42.8</td><td>—</td><td>—</td></tr>
+            <tr><td>VLM2Vec-2.0</td><td>29.0</td><td>27.6</td><td>32.3</td><td>31.0</td><td>27.9</td><td>43.6</td><td>34.4</td><td>49.2</td></tr>
+            <tr><td>Qwen3-VL-Emb</td><td>39.7</td><td>36.1</td><td>42.7</td><td>42.8</td><td>45.8</td><td>50.6</td><td class="best">50.6</td><td>63.1</td></tr>
+            <tr><td>VidVec</td><td>28.4</td><td>25.3</td><td>32.1</td><td>28.6</td><td>36.0</td><td>51.0</td><td>39.8</td><td>54.5</td></tr>
+            <tr class="ours" style="border-top: 2px solid #333;">
+              <td>VidVec-Msg (Ours)</td>
+              <td class="best">47.5</td><td class="best">45.6</td>
+              <td class="best">48.9</td><td class="best">46.7</td>
+              <td class="best">48.9</td><td class="best">63.2</td>
+              <td>49.1</td><td class="best">65.0</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-caption">
+          VidMsg retrieval performance. Recall@10 and mAP for Text-to-Video; Recall@1 and mAP for Video-to-Text; with and without ASR transcripts. Bold indicates best result per column.
+        </p>
       </div>
 
-      <!-- V2T Results Table -->
-      <div class="columns is-centered" style="margin-bottom: 2.5rem;">
-        <div class="column is-11">
-          <figure class="image">
-            <img src="static/images/tab-V2T.png" alt="Video-to-Text retrieval results on MSR-VTT, MSVD, VATEX, and DiDeMo" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              <strong>Video-to-Text retrieval.</strong> VidVec-O (optimized) consistently achieves the best results across benchmarks.
-            </figcaption>
-          </figure>
-        </div>
+      <!-- MCQ Results -->
+      <h3 class="title is-4" style="margin-bottom: 0.5rem;">Multiple-Choice QA Results</h3>
+      <div class="content has-text-justified" style="margin-bottom: 1rem;">
+        <p>
+          Among open-source models, <strong>Qwen2.5-VL-7B achieves the best overall accuracy at 71.9%</strong>, outperforming larger variants such as Qwen2.5-VL-32B (67.6%) and Qwen3-VL-32B (68.9%).
+          Commercial models obtain the strongest results: <strong>Gemini-3-Flash and Gemini-3.1-Pro both reach 76.5%</strong>.
+          Several models perform near the 20% random-choice baseline, confirming that VidMsg-QA is a genuinely challenging diagnostic.
+        </p>
       </div>
 
-      <!-- SOTA Comparison Table -->
-      <div class="columns is-centered">
-        <div class="column is-11">
-          <figure class="image">
-            <img src="static/images/tab-SOTA.png" alt="State-of-the-art comparison on video-text retrieval benchmarks" class="result-figure">
-            <figcaption class="has-text-centered figure-caption">
-              <strong>State-of-the-art comparison.</strong> VidVec end-to-end sets new state-of-the-art results on multiple benchmarks, surpassing Video Foundation Models (VFMs) contrastively trained on enormous number of video&ndash;text pairs.
-            </figcaption>
-          </figure>
-        </div>
+      <div style="overflow-x: auto; margin-bottom: 1rem;">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Car.</th><th>Comm.</th><th>Cult.</th><th>Edu.</th>
+              <th>Hlth.</th><th>Life.</th><th>Mob.</th><th>Safe.</th><th>Sust.</th>
+              <th>Overall</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="section-header"><td colspan="11">Commercial Large Multimodal Models</td></tr>
+            <tr><td>GPT-5.4-Mini</td><td>46.5</td><td>73.5</td><td>60.0</td><td>65.2</td><td>73.3</td><td>71.8</td><td>65.9</td><td>76.6</td><td>97.9</td><td>70.6</td></tr>
+            <tr><td>GPT-5.4</td><td>55.8</td><td>71.4</td><td>54.3</td><td>67.4</td><td>75.6</td><td>69.2</td><td>65.9</td><td>72.3</td><td>95.7</td><td>70.4</td></tr>
+            <tr><td>Gemini-3-Flash</td><td class="best">67.4</td><td>75.5</td><td>65.7</td><td>73.9</td><td>73.3</td><td>74.4</td><td>81.8</td><td>76.6</td><td>95.7</td><td class="best">76.5</td></tr>
+            <tr><td>Gemini-3.1-Pro</td><td>65.1</td><td>67.3</td><td>65.7</td><td class="best">80.4</td><td>75.6</td><td>71.8</td><td class="best">84.1</td><td class="best">78.7</td><td>95.7</td><td class="best">76.5</td></tr>
+            <tr class="section-header"><td colspan="11">Open-Source Vision-Language Models</td></tr>
+            <tr><td>Qwen3-VL-2B</td><td>41.9</td><td>67.3</td><td>65.7</td><td>54.4</td><td>57.8</td><td>61.5</td><td>65.9</td><td>66.0</td><td>95.7</td><td>64.3</td></tr>
+            <tr><td>VideoLLaMA3-7B</td><td>27.9</td><td>40.8</td><td>31.4</td><td>39.1</td><td>33.3</td><td>46.1</td><td>31.8</td><td>48.9</td><td>61.7</td><td>40.5</td></tr>
+            <tr><td>Qwen2.5-VL-7B</td><td class="best">55.8</td><td>77.5</td><td class="best">68.6</td><td class="best">63.0</td><td>68.9</td><td>69.2</td><td class="best">79.5</td><td class="best">70.2</td><td>91.5</td><td class="best">71.9</td></tr>
+            <tr><td>MiniCPM-V-4.5-8B</td><td>20.9</td><td>22.4</td><td>28.6</td><td>17.4</td><td>22.2</td><td>25.6</td><td>20.4</td><td>23.4</td><td>21.3</td><td>22.3</td></tr>
+            <tr><td>Molmo2-8B</td><td>44.2</td><td>55.1</td><td>40.0</td><td>56.5</td><td>48.9</td><td>61.5</td><td>45.5</td><td class="best">72.3</td><td>89.4</td><td>57.7</td></tr>
+            <tr><td>NVILA-8B</td><td>41.9</td><td>55.1</td><td>57.1</td><td>45.6</td><td>48.9</td><td>46.1</td><td>40.9</td><td>66.0</td><td>78.7</td><td>53.7</td></tr>
+            <tr><td>LLaVA-1.5-13B</td><td>46.5</td><td>57.1</td><td>60.0</td><td>47.8</td><td>46.7</td><td>59.0</td><td>50.0</td><td>48.9</td><td>80.8</td><td>55.2</td></tr>
+            <tr><td>Qwen3-VL-8B</td><td>53.5</td><td>61.2</td><td>60.0</td><td>47.8</td><td>64.4</td><td>69.2</td><td>61.4</td><td>68.1</td><td>95.7</td><td>64.8</td></tr>
+            <tr><td>Qwen2.5-VL-32B</td><td>46.5</td><td class="best">79.6</td><td>48.6</td><td>50.0</td><td class="best">77.8</td><td>66.7</td><td>65.9</td><td>70.2</td><td>95.7</td><td>67.6</td></tr>
+            <tr><td>Qwen3-VL-32B</td><td>53.5</td><td>75.5</td><td>57.1</td><td>58.7</td><td>66.7</td><td class="best">76.9</td><td>65.9</td><td>63.8</td><td class="best">97.9</td><td>68.9</td></tr>
+          </tbody>
+        </table>
+        <p class="table-caption">
+          VidMsg MCQ accuracy (%) by topic. Topics: Car. = Career &amp; Finance, Comm. = Community &amp; Culture, Cult. = Cultural Trends, Edu. = Education, Hlth. = Health &amp; Well-Being, Life. = Lifestyle &amp; Creativity, Mob. = Mobility &amp; Work, Safe. = Safety &amp; Empowerment, Sust. = Sustainability. Bold = best within model group per column.
+        </p>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          Per-topic results reveal substantial variation in difficulty. <strong>Sustainability is consistently the easiest topic</strong>, with several models exceeding 95% accuracy, suggesting its messages are more visually distinctive. In contrast, topics such as <strong>career and finance, cultural trends, and lifestyle</strong> are more challenging, requiring finer pragmatic distinctions and stronger contextual interpretation.
+        </p>
+        <p>
+          These results complement the retrieval evaluation: VidMsg is not merely a representation-learning challenge. It also exposes gaps in direct message reasoning, especially when the correct answer must be selected among closely related alternatives.
+        </p>
       </div>
     </div>
   </section>
-  <!-- End Main Results Section -->
+  <!-- End Results Section -->
 
 
   <!-- Key Contributions Section -->
@@ -428,10 +648,11 @@
           <h2 class="title is-3">Key Contributions</h2>
           <div class="content has-text-justified">
             <ul class="contributions-list">
-              <li><strong>Layer-wise analysis:</strong> A systematic study revealing that intermediate MLLM layers already encode substantial video&ndash;text alignment information suitable for retrieval.</li>
-              <li><strong>Zero-shot two-stage retrieval:</strong> Combining intermediate-layer embeddings with a calibrated MLLM head for pairwise reranking yields strong retrieval performance without any training.</li>
-              <li><strong>In-context text-only optimization:</strong> A lightweight alignment strategy using only ~60K text-only pairs (dense caption &rarr; short summary), enabling video&ndash;text embedding learning without visual supervision.</li>
-              <li><strong>State-of-the-art results:</strong> Without any fine-tuning beyond text, VidVec outperforms current MLLM embedders and Video Foundation Models across common video retrieval benchmarks.</li>
+              <li><strong>VidMsg benchmark:</strong> A benchmark for implicit message understanding in short, real-world, internet-native video clips — 400 clips across 9 topic areas and 52 fine-grained target messages.</li>
+              <li><strong>Message-first pipeline:</strong> A data construction pipeline using LLM-generated storylines, indirect search, and conservative human relevance and explicitness filtering.</li>
+              <li><strong>Two evaluation protocols:</strong> Bidirectional message&ndash;clip retrieval (T2V and V2T) and multiple-choice QA, enabling assessment of both scalable retrieval and direct message reasoning.</li>
+              <li><strong>Extensive model evaluation:</strong> Retrieval results for 10 methods and MCQ results for 14 models, showing that current systems remain far from reliable on VidMsg.</li>
+              <li><strong>VidVec-Msg baseline:</strong> A lightweight text-only adaptation method that substantially improves message-oriented retrieval without requiring video-based training data.</li>
             </ul>
           </div>
         </div>
@@ -451,10 +672,10 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{tzachor2026vidvec,
-      title={VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval}, 
-      author={Issar Tzachor, Dvir Samuel, Rami Ben-Ari},
-      year={2026},
+      <pre id="bibtex-code"><code>@inproceedings{tzachor2026vidmsg,
+  title     = {VidMsg: A Benchmark for Implicit Message Inference in Short Videos},
+  author    = {Issar Tzachor and Michael Green and Rami Ben-Ari},
+  year      = {2026},
 }</code></pre>
     </div>
   </section>
